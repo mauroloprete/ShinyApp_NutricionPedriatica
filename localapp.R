@@ -1,7 +1,20 @@
-if(!require(pacman)) install.packages("pacman")
+if (!require(pacman)) install.packages("pacman")
 
+p_load(
+  shiny,
+  shinythemes,
+  tidyverse,
+  magrittr,
+  DT,
+  openxlsx,
+  lubridate,
+  readxl,
+  shinyWidgets,
+  ggrepel,
+  devtools,
+  ggmosaic
+)
 load("Data.Rdata")
-
 if (utils::packageVersion("ggmosaic") < "0.3.0") {
   require("devtools")
   devtools::install_github("haleyjeppson/ggmosaic")
@@ -9,16 +22,6 @@ if (utils::packageVersion("ggmosaic") < "0.3.0") {
   library(ggmosaic)
 }
 
-library("shiny")
-library("shinythemes")
-library("tidyverse")
-library("magrittr")
-library("DT")
-library("openxlsx")
-library("lubridate")
-library("readxl")
-library("shinyWidgets")
-library("ggrepel")
 
 ninios %<>%
   rename(

@@ -1,0 +1,11 @@
+name: shinyapp_nutricionpedriatica
+title:
+username:
+account: mauro-loprete
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3992165
+bundleId: 4490382
+url: https://mauro-loprete.shinyapps.io/shinyapp_nutricionpedriatica/
+when: 1618835340.856
+lastSyncTime: 1618835340.856
